@@ -10,7 +10,7 @@ Desktop/laptops médio: de 992px até 1200px (acha que é pouco)
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-height:500px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
@@ -32,7 +32,7 @@ Grandes telas: acima de 1200px
 }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (orientation: landscape) and (min-height:500px){
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
@@ -54,3 +54,52 @@ Grandes telas: acima de 1200px
    }
 }
 
+@media screen and (orientation:landscape) and (max-height: 500px) {
+    /* celular deitado */
+    section#login {
+        height: 90%;
+        width: 450px;
+    }
+
+    section#login > div#imagem {
+        height: 30%;
+        
+    }
+    
+}
+
+@media screen and (orientation:landscape) and (max-height: 500px) and (min-width: 768px) {
+    section#login {
+        width: 80%;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+        height: 100%;
+}
+}
+
+@media screen and (orientation:landscape) and (max-height: 500px) and (min-width: 992px) {
+    section#login {
+        width: 950px;
+   }
+
+   section#login > div#imagem {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+section#login > div#formulario {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+}
