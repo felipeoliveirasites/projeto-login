@@ -32,13 +32,15 @@ Grandes telas: acima de 1200px
 }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (min-height: 500px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        min-height: 500px;
     }
 
    section#login {
         width: 950px;
+        height: 90%;
    }
 
    section#login > div#imagem {
@@ -68,11 +70,11 @@ Grandes telas: acima de 1200px
     /* celular deitado */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
-        min-height: 400px;
     }
 
     main {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        min-height: 380px;
     }
 
     section#login {
@@ -98,13 +100,18 @@ Grandes telas: acima de 1200px
 }
 
 
-@media screen and (orientation:landscape) and (max-height: 500px) and (min-width: 768px) {
+@media screen and (orientation:landscape) and (max-height: 500px) and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
+    main {
+        height: 90vh;
+    }
+
     section#login {
         width: 80%;
+        height: 80%;
     }
 
     section#login > div#imagem{
@@ -123,11 +130,10 @@ Grandes telas: acima de 1200px
 @media screen and (orientation:landscape) and (max-height: 500px) and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        min-height: 800px;
     }
 
-    section#login {
-        width: 950px;
-   }
+    
 
    section#login > div#imagem {
     float: left;
