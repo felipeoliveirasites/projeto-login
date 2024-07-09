@@ -66,6 +66,10 @@ Grandes telas: acima de 1200px
 /* CELULAR DEITADO   */ 
 @media screen and (orientation:landscape) and (max-height: 500px) {
     /* celular deitado */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
     section#login {
         height: 90%;
         width: 450px;
