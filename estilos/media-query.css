@@ -70,11 +70,12 @@ Grandes telas: acima de 1200px
     /* celular deitado */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        min-height: 300px;
     }
 
     main {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
-        min-height: 380px;
+        min-height: 300px;
     }
 
     section#login {
@@ -103,23 +104,17 @@ Grandes telas: acima de 1200px
 @media screen and (orientation:landscape) and (max-height: 500px) and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
-        padding: 0px;
-        margin: 0px;
         min-height: 300px;
         
     }
 
     main {
        min-height: 300px;
-       padding: 0px;
-       margin: 0px;
     }
 
     section#login {
         width: 80%;
         height: 90%;
-        margin: 0px;
-        padding: 0px;
     }
 
     section#login > div#imagem{
@@ -138,8 +133,12 @@ Grandes telas: acima de 1200px
 @media screen and (orientation:landscape) and (max-height: 500px) and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        min-height: 300px;
     }
 
+    main {
+        min-height: 300px;
+    }
     section#login {
         width: 950px;
     }
