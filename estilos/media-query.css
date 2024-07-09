@@ -68,11 +68,19 @@ Grandes telas: acima de 1200px
     /* celular deitado */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        min-height: 400px;
+    }
+
+    main {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     section#login {
         height: 90%;
         width: 450px;
+        min-height: 300px;
+        margin: auto;
+        overflow: auto;
     }
 
 
