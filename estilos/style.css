@@ -36,19 +36,20 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+   
     overflow-y: visible;
 
-    background-color: white;
+    background-color: white;    
     width: 260px;
     height: 518px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     overflow: hidden;
 
+    transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
-}
+    }
 
 section#login > div#imagem {
     display: block;
@@ -99,8 +100,8 @@ main > section#login > div#formulario > form > div.campo > input {
     border: none;
     border-radius: 8px;
     padding: 0px 4px;
-    transform: translate(1px, -13px);
     margin: 0px;
+    transform: translate(2px, -13px);
 }
 
 main > section#login > div#formulario > form > div.campo > input:hover {
